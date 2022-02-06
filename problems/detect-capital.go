@@ -1,5 +1,7 @@
 package problems
 
+import "unicode"
+
 // https://leetcode.com/problems/detect-capital
 
 func detectCapitalUse(word string) bool {
