@@ -17,20 +17,18 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	v1, v2 := 0, 0
 
 	for l1 != nil || l2 != nil {
-		if l1 == nil {
-			v1 = 0
-		} else {
+		v1 = 0
+		if l1 != nil {
 			v1 = l1.Val
 		}
-		if l2 == nil {
-			v2 = 0
-		} else {
+		v2 = 0
+		if l2 != nil {
 			v2 = l2.Val
 		}
 		//
 
 		n = v1 + v2 + add
-		add = int(n/10)
+		add = n/10
 		if add > 0 {
 			sum.Val = n % 10
 		} else {
